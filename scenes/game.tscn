@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://dl2114s31us75"]
+
+[ext_resource type="Script" uid="uid://bsnq4m83bsypt" path="res://scripts/game.gd" id="1_uwrxv"]
+[ext_resource type="Texture2D" uid="uid://dx72dninpgk3n" path="res://assets/New Piskel (5).png" id="2_yqjtg"]
+[ext_resource type="Texture2D" uid="uid://0kn1uxda4ubd" path="res://assets/grid.png" id="3_lnu2h"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_uwrxv")
+
+[node name="UI-Layer" type="CanvasLayer" parent="."]
+layer = -10
+
+[node name="bg-color" type="ColorRect" parent="UI-Layer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.830935, 0.552653, 0.318843, 1)
+metadata/_edit_lock_ = true
+
+[node name="title" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(223, -26)
+scale = Vector2(13.4274, 14.614)
+texture = ExtResource("2_yqjtg")
+
+[node name="Grid" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(221, 400)
+scale = Vector2(12.4, 12.4)
+texture = ExtResource("3_lnu2h")
