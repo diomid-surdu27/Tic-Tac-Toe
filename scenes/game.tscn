@@ -1,11 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://dl2114s31us75"]
+[gd_scene load_steps=5 format=3 uid="uid://c2wuyupjgp6a"]
 
-[ext_resource type="Script" uid="uid://bsnq4m83bsypt" path="res://scripts/game.gd" id="1_uwrxv"]
-[ext_resource type="Texture2D" uid="uid://dx72dninpgk3n" path="res://assets/New Piskel (5).png" id="2_yqjtg"]
-[ext_resource type="Texture2D" uid="uid://0kn1uxda4ubd" path="res://assets/grid.png" id="3_lnu2h"]
+[ext_resource type="Script" uid="uid://bsnq4m83bsypt" path="res://scripts/game.gd" id="1_45sly"]
+[ext_resource type="Texture2D" uid="uid://dx72dninpgk3n" path="res://assets/New Piskel (5).png" id="2_imrxi"]
+[ext_resource type="Texture2D" uid="uid://0kn1uxda4ubd" path="res://assets/grid.png" id="3_ag5m2"]
+[ext_resource type="PackedScene" uid="uid://co4ys6i88ecn2" path="res://scenes/cell.tscn" id="4_lbhrr"]
 
 [node name="Game" type="Node2D"]
-script = ExtResource("1_uwrxv")
+script = ExtResource("1_45sly")
 
 [node name="UI-Layer" type="CanvasLayer" parent="."]
 layer = -10
@@ -16,6 +17,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(0.830935, 0.552653, 0.318843, 1)
 metadata/_edit_lock_ = true
 
@@ -23,10 +25,46 @@ metadata/_edit_lock_ = true
 texture_filter = 1
 position = Vector2(223, -26)
 scale = Vector2(13.4274, 14.614)
-texture = ExtResource("2_yqjtg")
+texture = ExtResource("2_imrxi")
 
 [node name="Grid" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(221, 400)
 scale = Vector2(12.4, 12.4)
-texture = ExtResource("3_lnu2h")
+texture = ExtResource("3_ag5m2")
+
+[node name="Cell" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(168, 320)
+scale = Vector2(0.059821, 0.0614283)
+
+[node name="Cell2" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(302, 185)
+scale = Vector2(0.059821, 0.0614283)
+
+[node name="Cell3" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(167, 183)
+scale = Vector2(0.059821, 0.0614283)
+
+[node name="Cell4" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(27, 182)
+scale = Vector2(0.059821, 0.0614283)
+
+[node name="Cell5" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(28, 319)
+scale = Vector2(0.059821, 0.0614283)
+
+[node name="Cell6" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(303, 320)
+scale = Vector2(0.059821, 0.0614283)
+
+[node name="Cell7" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(302, 460)
+scale = Vector2(0.059821, 0.0614283)
+
+[node name="Cell8" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(168, 461)
+scale = Vector2(0.059821, 0.0614283)
+
+[node name="Cell9" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(29, 460)
+scale = Vector2(0.059821, 0.0614283)

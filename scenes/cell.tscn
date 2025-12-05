@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://co4ys6i88ecn2"]
+
+[ext_resource type="Script" uid="uid://c54q314wkt64a" path="res://scripts/cell.gd" id="1_nm02e"]
+[ext_resource type="Texture2D" uid="uid://dowhbcs5mlbqu" path="res://assets/x.png" id="2_ds1sf"]
+[ext_resource type="Texture2D" uid="uid://cx5xiegeo8yn8" path="res://assets/0.png" id="3_ecwuj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k6tqi"]
+
+[node name="Cell" type="Area2D"]
+script = ExtResource("1_nm02e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1000, 1000)
+scale = Vector2(100, 100)
+shape = SubResource("RectangleShape2D_k6tqi")
+
+[node name="X" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+position = Vector2(1000, 1000)
+scale = Vector2(53.88, 53.88)
+texture = ExtResource("2_ds1sf")
+
+[node name="O" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+position = Vector2(1000, 1000)
+scale = Vector2(53.88, 53.88)
+texture = ExtResource("3_ecwuj")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
