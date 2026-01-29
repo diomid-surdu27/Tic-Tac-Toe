@@ -40,3 +40,92 @@ func _on_cell_clicked(cell):
 		turn = Globals.TurnState.TURN_O
 	else:
 		turn = Globals.TurnState.TURN_X
+		
+	check_win()
+
+func check_win():
+	var win_state = true
+	var first_cell_state = Globals.FillState.FILL_NONE
+	
+	# Win check (horizontal)
+	for y in range(board_size.y):
+		win_state = true
+		for x in range(board_size.x):
+			var cell = cells[x][y]
+			if x == 0:
+				if cell.fill_state ==  Globals.FillState.FILL_NONE:
+					win_state = false
+					break
+				first_cell_state = cell.fill_state
+			else:
+				if cell.fill_state != first_cell_state:
+					win_state = false
+					break
+		if win_state == true:
+			print("horiz win")	
+			break
+			
+			
+	# Win check (vertical)
+	for x in range(board_size.x):
+		win_state = true
+		for y in range(board_size.y):
+			var cell = cells[x][y]
+			if y == 0:
+				if cell.fill_state ==  Globals.FillState.FILL_NONE:
+					win_state = false
+					break
+				first_cell_state = cell.fill_state
+			else:
+				if cell.fill_state != first_cell_state:
+					win_state = false
+					break
+		if win_state == true:
+			print("vert win")	
+			break
+			
+	# Win check (cross)
+	win_state = true
+	for i in range(board_size.x):
+		var cell = cells[i][i]
+		if i == 0:
+			if cell.fill_state == Globals.FillState.FILL_NONE:
+				win_state = false
+				break 
+			first_cell_state = cell.fill_state
+		else:
+			if cell.fill_state != first_cell_state:
+				win_state = false
+				break
+				
+	if win_state == true:
+		print("cross win 1!!")
+	else:
+		# cross 2 win check
+		win_state = true
+		for i in range(board_size.x):
+			var cell = cells[2-i][i]
+			if i == 0:
+				if cell.fill_state == Globals.FillState.FILL_NONE:
+					win_state = false
+					break 
+				first_cell_state = cell.fill_state
+			else:
+				if cell.fill_state != first_cell_state:
+					win_state = false
+					break
+		if win_state == true:
+			print("cross win 2!!")
+	# Draw check
+	if win_state == false:
+		var is_draw = true
+		for x in range(board_size.x):
+			for y in range(board_size.y):
+				var cell = cells[x][y]
+				if cell.fill_state == Globals.FillState.FILL_NONE:
+					is_draw = false
+					break
+			if is_draw == false:
+				break
+		if is_draw == true:
+			print("DRAW!")
