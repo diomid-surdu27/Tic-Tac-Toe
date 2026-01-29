@@ -20,3 +20,13 @@ func fill(new_fill_state: Globals.FillState):
 			%X.visible = true
 		elif fill_state == Globals.FillState.FILL_O:
 			%O.visible = true
+			
+func change_color(new_color: Color):
+	%X.modulate = new_color
+	%O.modulate = new_color
+	
+func highlight(enable: bool):
+	if enable == true:
+		change_color(Color.ANTIQUE_WHITE)
+	else:
+		change_color(Color.BLACK)

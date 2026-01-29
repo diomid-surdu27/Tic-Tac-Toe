@@ -62,8 +62,9 @@ func check_win():
 					win_state = false
 					break
 		if win_state == true:
-			print("horiz win")	
-			break
+			for x in range(board_size.x):
+				var cell = cells[x][y]
+				cell.highlight(true)
 			
 			
 	# Win check (vertical)
@@ -81,8 +82,10 @@ func check_win():
 					win_state = false
 					break
 		if win_state == true:
-			print("vert win")	
-			break
+			for y in range(board_size.y):
+				var cell = cells[x][y]
+				cell.highlight(true)
+			
 			
 	# Win check (cross)
 	win_state = true
