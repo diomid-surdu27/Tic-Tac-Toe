@@ -1,4 +1,4 @@
 extends Node
 
-enum fill_states {fill_empty, fill_X, fill_O}
-enum turn_states {turn_X, turn_O}
+enum FillState {FILL_NONE, FILL_X, FILL_O}
+enum TurnState {TURN_X, TURN_O }

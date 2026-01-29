@@ -1,2 +1,5 @@
+res://scenes/game.tscn
 res://scenes/cell.tscn
+res://scripts/cell.gd
+res://scripts/globals.gd
 res://scripts/game.gd

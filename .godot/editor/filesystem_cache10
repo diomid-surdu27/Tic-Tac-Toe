@@ -1,15 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1767650492
+::res://::1769698310
 icon.svg::CompressedTexture2D/CompressedTexture2D::2021550432988992432::1764879926::1764884967::1::::<><><>0<>0<>019bc19fcaec6cfabbf22d8edd5a32e9<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1764884967
 0.png::CompressedTexture2D/CompressedTexture2D::6450527100431610787::1764880851::1764884967::1::::<><><>0<>0<>5f6c20dbaa3f427769b4ddc1d0a71490<>res://.godot/imported/0.png-1126c5ac2c0251a04c124cc3e80cc7be.ctex::
 grid.png::CompressedTexture2D/CompressedTexture2D::1776201706173872381::1764880968::1764884967::1::::<><><>0<>0<>f155256ffc0e650fee0227353ada80d8<>res://.godot/imported/grid.png-0e5acf495abafdc7f64f9b213a44aa0e.ctex::
 New Piskel (5).png::CompressedTexture2D/CompressedTexture2D::8841310954843311149::1764881644::1764884967::1::::<><><>0<>0<>addd374e898fe15f1af74b8d8831ac7a<>res://.godot/imported/New Piskel (5).png-b7e31acc91c3a33e3bbf899463fbba0f.ctex::
 x.png::CompressedTexture2D/CompressedTexture2D::8187749111577054352::1764880757::1764884967::1::::<><><>0<>0<>af4d5a9f97d33b8d6ccc7aee8549d6cd<>res://.godot/imported/x.png-c2761cde5044068192e9f310196875f2.ctex::
-::res://scenes/::1766445414
-cell.tscn::PackedScene::5816843127428990125::1766445414::0::1::::<><><>0<>0<><>::uid://c54q314wkt64a::::res://scripts/cell.gd<>uid://dowhbcs5mlbqu::::res://assets/x.png<>uid://cx5xiegeo8yn8::::res://assets/0.png
-game.tscn::PackedScene::197488668504943226::1766445414::0::1::::<><><>0<>0<><>::uid://bsnq4m83bsypt::::res://scripts/game.gd<>uid://dx72dninpgk3n::::res://assets/New Piskel (5).png<>uid://0kn1uxda4ubd::::res://assets/grid.png<>uid://co4ys6i88ecn2::::res://scenes/cell.tscn
-::res://scripts/::1764974824
+::res://scenes/::1767650675
+cell.tscn::PackedScene::5816843127428990125::1767650675::0::1::::<><><>0<>0<><>::uid://c54q314wkt64a::::res://scripts/cell.gd<>uid://dowhbcs5mlbqu::::res://assets/x.png<>uid://cx5xiegeo8yn8::::res://assets/0.png
+game.tscn::PackedScene/PackedScene::197488668504943226::1766445414::0::1::::<><><>0<>0<><>::uid://bsnq4m83bsypt::::res://scripts/game.gd<>uid://dx72dninpgk3n::::res://assets/New Piskel (5).png<>uid://0kn1uxda4ubd::::res://assets/grid.png<>uid://co4ys6i88ecn2::::res://scenes/cell.tscn
+::res://scripts/::1767650675
 cell.gd::GDScript/GDScript::6939396516928665742::1764974778::0::1::::<>Area2D<><>0<>0<><>::
-game.gd::GDScript/GDScript::3677680722420977873::1764974824::0::1::::<>Node2D<><>0<>0<><>::
+game.gd::GDScript::3677680722420977873::1767650675::0::1::::<>Node2D<><>0<>0<><>::
 globals.gd::GDScript/GDScript::3112960197250493354::1764974466::0::1::::<>Node<><>0<>0<><>::
