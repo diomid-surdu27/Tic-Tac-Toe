@@ -7,6 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k6tqi"]
 
 [node name="Cell" type="Area2D"]
+scale = Vector2(0.0503492, 0.0503492)
 script = ExtResource("1_nm02e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -18,14 +19,14 @@ shape = SubResource("RectangleShape2D_k6tqi")
 unique_name_in_owner = true
 texture_filter = 1
 position = Vector2(1000, 1000)
-scale = Vector2(53.88, 53.88)
+scale = Vector2(41.3208, 41.3208)
 texture = ExtResource("2_ds1sf")
 
 [node name="O" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 texture_filter = 1
 position = Vector2(1000, 1000)
-scale = Vector2(53.88, 53.88)
+scale = Vector2(41.3208, 41.3208)
 texture = ExtResource("3_ecwuj")
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]
