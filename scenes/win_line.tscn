@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwj7e6d2mtfbu"]
+
+[ext_resource type="Texture2D" uid="uid://wgbjtx7dvdee" path="res://assets/New Piskel (6).png" id="1_v32eh"]
+[ext_resource type="Script" uid="uid://ckltuli8b0udb" path="res://scripts/win_line.gd" id="2_ud1um"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Win" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+texture = ExtResource("1_v32eh")
+script = ExtResource("2_ud1um")

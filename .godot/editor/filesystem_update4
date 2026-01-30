@@ -1,5 +1,7 @@
+res://win_line.gd
+res://scenes/win_line.tscn
 res://scenes/game.tscn
+res://scripts/win_line.gd
 res://scenes/cell.tscn
-res://scripts/cell.gd
-res://scripts/globals.gd
 res://scripts/game.gd
+res://scripts/cell.gd

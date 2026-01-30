@@ -3,6 +3,7 @@ extends Node2D
 var cell_scene = preload("res://scenes/cell.tscn")
 var cells = []
 var board_size = Vector2i(3,3)
+@onready var win_line = $scripts/win_line
 
 var turn = Globals.TurnState.TURN_X
 
@@ -62,7 +63,7 @@ func check_win():
 					win_state = false
 					break
 		if win_state == true:
-			for x in range(board_size.x):
+			for x in range(board_size.y):
 				var cell = cells[x][y]
 				cell.highlight(true)
 			
@@ -102,7 +103,9 @@ func check_win():
 				break
 				
 	if win_state == true:
-		print("cross win 1!!")
+		for i in range(board_size.x):
+				var cell = cells[i][i]
+				cell.highlight(true)
 	else:
 		# cross 2 win check
 		win_state = true
@@ -118,7 +121,9 @@ func check_win():
 					win_state = false
 					break
 		if win_state == true:
-			print("cross win 2!!")
+			for i in range(board_size.x):
+				var cell = cells[2-i][i]
+				cell.highlight(true)
 	# Draw check
 	if win_state == false:
 		var is_draw = true
@@ -131,4 +136,6 @@ func check_win():
 			if is_draw == false:
 				break
 		if is_draw == true:
-			print("DRAW!")
+			for y in range(board_size.y):
+				for x in range(board_size.x):
+					cells[y][x].highlight(true)

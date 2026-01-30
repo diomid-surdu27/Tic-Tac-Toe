@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2wuyupjgp6a"]
+[gd_scene load_steps=5 format=3 uid="uid://c2wuyupjgp6a"]
 
 [ext_resource type="Script" uid="uid://bsnq4m83bsypt" path="res://scripts/game.gd" id="1_45sly"]
 [ext_resource type="Texture2D" uid="uid://dx72dninpgk3n" path="res://assets/New Piskel (5).png" id="2_imrxi"]
 [ext_resource type="Texture2D" uid="uid://wu5xmdcv0t0u" path="res://assets/grid.png" id="3_ag5m2"]
+[ext_resource type="PackedScene" uid="uid://dwj7e6d2mtfbu" path="res://scenes/win_line.tscn" id="4_lbhrr"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_45sly")
@@ -32,3 +33,40 @@ texture_filter = 1
 position = Vector2(221, 400)
 scale = Vector2(0.879997, 0.879997)
 texture = ExtResource("3_ag5m2")
+
+[node name="hor1" parent="." instance=ExtResource("4_lbhrr")]
+unique_name_in_owner = true
+position = Vector2(222, 326)
+rotation = -1.56906
+
+[node name="hor2" parent="." instance=ExtResource("4_lbhrr")]
+unique_name_in_owner = true
+position = Vector2(218, 410)
+rotation = -1.57098
+
+[node name="hor3" parent="." instance=ExtResource("4_lbhrr")]
+unique_name_in_owner = true
+position = Vector2(221, 503)
+rotation = -1.57215
+
+[node name="ver1" parent="." instance=ExtResource("4_lbhrr")]
+unique_name_in_owner = true
+position = Vector2(125, 401)
+
+[node name="ver2" parent="." instance=ExtResource("4_lbhrr")]
+unique_name_in_owner = true
+position = Vector2(218, 401)
+
+[node name="ver3" parent="." instance=ExtResource("4_lbhrr")]
+unique_name_in_owner = true
+position = Vector2(307, 403)
+
+[node name="cross1" parent="." instance=ExtResource("4_lbhrr")]
+unique_name_in_owner = true
+position = Vector2(215, 412)
+rotation = -0.758557
+
+[node name="cross2" parent="." instance=ExtResource("4_lbhrr")]
+unique_name_in_owner = true
+position = Vector2(218, 404)
+rotation = 0.742345

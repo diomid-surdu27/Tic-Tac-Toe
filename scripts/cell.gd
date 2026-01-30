@@ -27,6 +27,6 @@ func change_color(new_color: Color):
 	
 func highlight(enable: bool):
 	if enable == true:
-		change_color(Color.ANTIQUE_WHITE)
+		change_color(Color.SEA_GREEN)
 	else:
 		change_color(Color.BLACK)
